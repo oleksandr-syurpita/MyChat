@@ -8,7 +8,7 @@
 import SwiftUI
 struct NavigationConfigurator: UIViewControllerRepresentable {
     var configure: (UINavigationController) -> Void = { _ in }
-
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
         UIViewController()
     }
@@ -17,13 +17,13 @@ struct NavigationConfigurator: UIViewControllerRepresentable {
             self.configure(nc)
         }
     }
-
+    
 }
 struct UserContactView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear // For tableView
         UITableViewCell.appearance().backgroundColor = .clear // For tableViewCell
-       
+        
     }
     var body: some View {
         NavigationView {
@@ -33,10 +33,10 @@ struct UserContactView: View {
             }
             .background(Image("backgRoundChat"))
             .navigationBarTitle("Yor contact", displayMode: .large)
-                      .background(NavigationConfigurator { nc in
-                          nc.navigationBar.barTintColor = .blue
-                          nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
-                      })
+            .background(NavigationConfigurator { nc in
+                nc.navigationBar.barTintColor = .blue
+                nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+            })
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     Button(action: {}) {
