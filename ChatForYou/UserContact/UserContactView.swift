@@ -15,18 +15,12 @@ struct UserContactView: View {
     @ObservedObject var viewModel: UserContactViewModel
     var body: some View {
         NavigationView {
-<<<<<<< Updated upstream
-            List(contacts) { contact in
-                ContactRow(contact: contact)
-                    .listRowBackground(Color.clear)
-=======
             List(viewModel.contacts) { contact in
                 NavigationLink(destination: UserContactDetailsView(contact: contact)) {
                     ContactRow(contact: contact)
                 }
                 .listRowBackground(Color.clear)
                 
->>>>>>> Stashed changes
             }
             .background(Image("backgRoundChat"))
             .navigationBarTitle("Yor contact", displayMode: .large)
