@@ -6,37 +6,41 @@
 //
 
 import SwiftUI
-struct NavigationConfigurator: UIViewControllerRepresentable {
-    var configure: (UINavigationController) -> Void = { _ in }
-
-    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
-        UIViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
-        if let nc = uiViewController.navigationController {
-            self.configure(nc)
-        }
-    }
-
-}
 struct UserContactView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear // For tableView
         UITableViewCell.appearance().backgroundColor = .clear // For tableViewCell
-       
+        viewModel = .init()
     }
+    @ObservedObject var viewModel: UserContactViewModel
     var body: some View {
         NavigationView {
+<<<<<<< Updated upstream
             List(contacts) { contact in
                 ContactRow(contact: contact)
                     .listRowBackground(Color.clear)
+=======
+            List(viewModel.contacts) { contact in
+                NavigationLink(destination: UserContactDetailsView(contact: contact)) {
+                    ContactRow(contact: contact)
+                }
+                .listRowBackground(Color.clear)
+                
+>>>>>>> Stashed changes
             }
             .background(Image("backgRoundChat"))
             .navigationBarTitle("Yor contact", displayMode: .large)
-                      .background(NavigationConfigurator { nc in
-                          nc.navigationBar.barTintColor = .blue
-                          nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
-                      })
+            .background(NavigationConfigurator { nc in
+                nc.navigationBar.barTintColor = .blue
+                nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+            })
+            .navigationBarItems(trailing: Button(action:{
+
+                viewModel.addRow()
+            })
+                                {
+                Image(systemName: "plus")
+            })
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     Button(action: {}) {
@@ -64,6 +68,7 @@ struct UserContactView: View {
                 
             }
             
+            
         }
         
     }
@@ -76,8 +81,7 @@ struct UserContactView_Previews: PreviewProvider {
 }
 
 struct ContactRow: View {
-    let contact: Contact
-    
+    var contact: Contact
     var body: some View {
         HStack {
             Image(contact.imageName)

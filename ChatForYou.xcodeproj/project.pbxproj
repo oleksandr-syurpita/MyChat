@@ -16,6 +16,12 @@
 		84196393284D63220047EC55 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196392284D63220047EC55 /* LoginView.swift */; };
 		849A3422284FCDFA001C9375 /* UserContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A3421284FCDFA001C9375 /* UserContactViewModel.swift */; };
 		84A048C5284E982B00C76A48 /* UserContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A048C4284E982B00C76A48 /* UserContactView.swift */; };
+<<<<<<< Updated upstream
+=======
+		84B06E962858D79E0042E43B /* UserContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B06E952858D79D0042E43B /* UserContactDetailsView.swift */; };
+		84B06E9A2858F2EF0042E43B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B06E992858F2EF0042E43B /* Contact.swift */; };
+		84B06E9D2858F5490042E43B /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B06E9C2858F5490042E43B /* NavigationConfigurator.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,12 @@
 		84196392284D63220047EC55 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		849A3421284FCDFA001C9375 /* UserContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactViewModel.swift; sourceTree = "<group>"; };
 		84A048C4284E982B00C76A48 /* UserContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactView.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+=======
+		84B06E952858D79D0042E43B /* UserContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactDetailsView.swift; sourceTree = "<group>"; };
+		84B06E992858F2EF0042E43B /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		84B06E9C2858F5490042E43B /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,8 @@
 		84196379284D5AEF0047EC55 /* ChatForYou */ = {
 			isa = PBXGroup;
 			children = (
+				84B06E9B2858F51D0042E43B /* Configuration */,
+				84B06E982858F2DA0042E43B /* Model */,
 				8419638C284D5C430047EC55 /* Color */,
 				8419638B284D5B850047EC55 /* UserContact */,
 				84196389284D5B490047EC55 /* Main */,
@@ -120,6 +134,22 @@
 				8419638D284D5C510047EC55 /* Color.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		84B06E982858F2DA0042E43B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B06E992858F2EF0042E43B /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84B06E9B2858F51D0042E43B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				84B06E9C2858F5490042E43B /* NavigationConfigurator.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,12 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B06E9A2858F2EF0042E43B /* Contact.swift in Sources */,
 				84A048C5284E982B00C76A48 /* UserContactView.swift in Sources */,
 				849A3422284FCDFA001C9375 /* UserContactViewModel.swift in Sources */,
 				8419637D284D5AEF0047EC55 /* ContentView.swift in Sources */,
 				84196390284D63010047EC55 /* RegisterView.swift in Sources */,
 				8419637B284D5AEF0047EC55 /* ChatForYouApp.swift in Sources */,
 				84196393284D63220047EC55 /* LoginView.swift in Sources */,
+				84B06E9D2858F5490042E43B /* NavigationConfigurator.swift in Sources */,
 				8419638E284D5C510047EC55 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
