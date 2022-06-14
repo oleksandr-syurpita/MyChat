@@ -75,7 +75,6 @@ struct UserContactView_Previews: PreviewProvider {
 
 struct ContactRow: View {
     let contact: Contact
-    
     var body: some View {
         HStack {
             Image(contact.imageName)
