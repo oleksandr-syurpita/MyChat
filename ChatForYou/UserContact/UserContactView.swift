@@ -6,28 +6,18 @@
 //
 
 import SwiftUI
-struct NavigationConfigurator: UIViewControllerRepresentable {
-    var configure: (UINavigationController) -> Void = { _ in }
 
-    func makeUIViewController(context: UIViewControllerRepresentableContext<NavigationConfigurator>) -> UIViewController {
-        UIViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<NavigationConfigurator>) {
-        if let nc = uiViewController.navigationController {
-            self.configure(nc)
-        }
-    }
-
-}
 struct UserContactView: View {
     init() {
         UITableView.appearance().backgroundColor = .clear // For tableView
         UITableViewCell.appearance().backgroundColor = .clear // For tableViewCell
-       
+        viewModel = .init()
     }
+    @ObservedObject var viewModel: UserContactViewModel
     var body: some View {
+        
         NavigationView {
-            List(contacts) { contact in
+            List(viewModel.contacts) { contact in
                 NavigationLink(destination: UserContactDetailsView(contact: contact)) {
                     ContactRow(contact: contact)
                 }
@@ -40,6 +30,11 @@ struct UserContactView: View {
                           nc.navigationBar.barTintColor = .blue
                           nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
                       })
+                      .navigationBarItems(trailing: Button(action: {
+                          viewModel.addRow()
+                      }) {
+                           Image(systemName: "plus")
+                       })
             .toolbar {
                 ToolbarItemGroup(placement: .bottomBar) {
                     Button(action: {}) {

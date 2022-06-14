@@ -48,6 +48,14 @@ struct UserContactDetailsView: View {
 
 struct UserContactDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        UserContactDetailsView(contact: contacts[0])
+        UserContactDetailsView(
+            contact: Contact(
+                imageName: "1",
+                name: "Holly F. Huey",
+                phone: "+1(242)-8110134",
+                email: "hollyhuey@yeilmail.com",
+                age: 21
+            )
+        )
     }
 }
