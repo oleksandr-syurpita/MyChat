@@ -29,7 +29,6 @@ struct RegisterView: View {
 private extension RegisterView {
     
     var viewBackground: some View {
-        NavigationView {
             ZStack {
                 Image("backgRoundRegister")
                     .resizable()
@@ -50,7 +49,7 @@ private extension RegisterView {
                     ) {}
                 }
             }
-        }
+        
     }
     var emailTextFild: some View {
         VStack {

@@ -12,7 +12,6 @@ struct LoginView: View {
     @State private var password: String = ""
     @State private var actionButtondontHaveAccount: Bool = false
        var body: some View {
-           NavigationView {
                ZStack {
                   Image("backRoundLogin")
                        .resizable()
@@ -42,7 +41,6 @@ struct LoginView: View {
                        ) {}
                    }
                }
-           }
                    
        }}
 

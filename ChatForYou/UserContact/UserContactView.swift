@@ -28,8 +28,11 @@ struct UserContactView: View {
     var body: some View {
         NavigationView {
             List(contacts) { contact in
-                ContactRow(contact: contact)
+                NavigationLink(destination: UserContactDetailsView(contact: contact)) {
+                    ContactRow(contact: contact)
+                }
                     .listRowBackground(Color.clear)
+                
             }
             .background(Image("backgRoundChat"))
             .navigationBarTitle("Yor contact", displayMode: .large)
