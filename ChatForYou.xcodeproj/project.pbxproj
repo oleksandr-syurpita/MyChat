@@ -14,12 +14,23 @@
 		8419638E284D5C510047EC55 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419638D284D5C510047EC55 /* Color.swift */; };
 		84196390284D63010047EC55 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8419638F284D63000047EC55 /* RegisterView.swift */; };
 		84196393284D63220047EC55 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84196392284D63220047EC55 /* LoginView.swift */; };
+		849597B3285B6C0500073F25 /* ChatForYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849597B2285B6C0500073F25 /* ChatForYouTests.swift */; };
 		849A3422284FCDFA001C9375 /* UserContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849A3421284FCDFA001C9375 /* UserContactViewModel.swift */; };
 		84A048C5284E982B00C76A48 /* UserContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A048C4284E982B00C76A48 /* UserContactView.swift */; };
 		84B06E962858D79E0042E43B /* UserContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B06E952858D79D0042E43B /* UserContactDetailsView.swift */; };
 		84B06EA02858F7DA0042E43B /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B06E9F2858F7DA0042E43B /* Contact.swift */; };
 		84B06EA42858F9530042E43B /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B06EA32858F9530042E43B /* NavigationConfigurator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		849597B4285B6C0500073F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8419636F284D5AEF0047EC55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84196376284D5AEF0047EC55;
+			remoteInfo = ChatForYou;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84196377284D5AEF0047EC55 /* ChatForYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatForYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +41,8 @@
 		8419638D284D5C510047EC55 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8419638F284D63000047EC55 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		84196392284D63220047EC55 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		849597B0285B6C0500073F25 /* ChatForYouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatForYouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849597B2285B6C0500073F25 /* ChatForYouTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatForYouTests.swift; sourceTree = "<group>"; };
 		849A3421284FCDFA001C9375 /* UserContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactViewModel.swift; sourceTree = "<group>"; };
 		84A048C4284E982B00C76A48 /* UserContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactView.swift; sourceTree = "<group>"; };
 		84B06E952858D79D0042E43B /* UserContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactDetailsView.swift; sourceTree = "<group>"; };
@@ -45,6 +58,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849597AD285B6C0500073F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -52,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				84196379284D5AEF0047EC55 /* ChatForYou */,
+				849597B1285B6C0500073F25 /* ChatForYouTests */,
 				84196378284D5AEF0047EC55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				84196377284D5AEF0047EC55 /* ChatForYou.app */,
+				849597B0285B6C0500073F25 /* ChatForYouTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +153,14 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		849597B1285B6C0500073F25 /* ChatForYouTests */ = {
+			isa = PBXGroup;
+			children = (
+				849597B2285B6C0500073F25 /* ChatForYouTests.swift */,
+			);
+			path = ChatForYouTests;
+			sourceTree = "<group>";
+		};
 		84B06E9E2858F7CD0042E43B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +197,24 @@
 			productReference = 84196377284D5AEF0047EC55 /* ChatForYou.app */;
 			productType = "com.apple.product-type.application";
 		};
+		849597AF285B6C0500073F25 /* ChatForYouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849597B8285B6C0500073F25 /* Build configuration list for PBXNativeTarget "ChatForYouTests" */;
+			buildPhases = (
+				849597AC285B6C0500073F25 /* Sources */,
+				849597AD285B6C0500073F25 /* Frameworks */,
+				849597AE285B6C0500073F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849597B5285B6C0500073F25 /* PBXTargetDependency */,
+			);
+			name = ChatForYouTests;
+			productName = ChatForYouTests;
+			productReference = 849597B0285B6C0500073F25 /* ChatForYouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -179,6 +227,10 @@
 				TargetAttributes = {
 					84196376284D5AEF0047EC55 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					849597AF285B6C0500073F25 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 84196376284D5AEF0047EC55;
 					};
 				};
 			};
@@ -196,6 +248,7 @@
 			projectRoot = "";
 			targets = (
 				84196376284D5AEF0047EC55 /* ChatForYou */,
+				849597AF285B6C0500073F25 /* ChatForYouTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +260,13 @@
 			files = (
 				84196382284D5AF10047EC55 /* Preview Assets.xcassets in Resources */,
 				8419637F284D5AF10047EC55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849597AE285B6C0500073F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +290,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849597AC285B6C0500073F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849597B3285B6C0500073F25 /* ChatForYouTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849597B5285B6C0500073F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84196376284D5AEF0047EC55 /* ChatForYou */;
+			targetProxy = 849597B4285B6C0500073F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		84196383284D5AF10047EC55 /* Debug */ = {
@@ -405,6 +481,42 @@
 			};
 			name = Release;
 		};
+		849597B6285B6C0500073F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNZ6H5K49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Syurpita.ChatForYouTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatForYou.app/ChatForYou";
+			};
+			name = Debug;
+		};
+		849597B7285B6C0500073F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WNZ6H5K49;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Syurpita.ChatForYouTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatForYou.app/ChatForYou";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -422,6 +534,15 @@
 			buildConfigurations = (
 				84196386284D5AF10047EC55 /* Debug */,
 				84196387284D5AF10047EC55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849597B8285B6C0500073F25 /* Build configuration list for PBXNativeTarget "ChatForYouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849597B6285B6C0500073F25 /* Debug */,
+				849597B7285B6C0500073F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
